@@ -47,8 +47,8 @@ function wa_lua_on_handshake_cb(ctx)
         local res = 'CONNECT ' .. host .. ':' .. port .. ' HTTP/1.1\r\n' ..
                     'Host: ' .. host .. ':' .. port .. '\r\n' ..
                     'Proxy-Connection: Keep-Alive\r\n'..
-                    'X-T5-Auth: YTY0Nzlk\r\n'..
-                    'User-Agent: netdisk;11.32.0;iPhone13ProMax;ios-iphone;15.1;zh_CN\r\n\r\n'
+                    'X-T5-Auth: 2039054715,2039054715\r\n'..
+                    'User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 15_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 SP-engine/2.55.0 baiduboxapp/13.17.1.10 (Baidu; P2 15.1)\r\n\r\n'
         ctx_write(ctx, res)
         flags[uuid] = kHttpHeaderSent
     end
